@@ -1,6 +1,6 @@
-// import AppError from '../errors/AppError';
-
 import { getCustomRepository, getRepository } from 'typeorm';
+
+import AppError from '../errors/AppError';
 import TransactionsRepository from '../repositories/TransactionsRepository';
 import Transaction from '../models/Transaction';
 import Category from '../models/Category';
@@ -22,7 +22,19 @@ class CreateTransactionService {
     const transactionsRepository = getCustomRepository(TransactionsRepository);
     const categoryRepository = getRepository(Category);
 
-    let transactionCategory = categoryRepository.findOne({
+    const { total } = await transactionsRepository.getBalance();
+
+    if (!['income', 'outcome'].includes(type)) {
+      throw new AppError('Tipo de transação inválido.');
+    }
+
+    if (type === 'outcome' && total < value) {
+      throw new AppError(
+        'Seu resultado não deve ser menor que sua renda total.',
+      );
+    }
+
+    let transactionCategory = await categoryRepository.findOne({
       where: {
         title: category,
       },
