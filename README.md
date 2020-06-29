@@ -20,6 +20,9 @@
   <a href="#-Sobre-o-desafio">🚀 Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Projeto">🚧 Projeto</a>
 </p>
+<p align="center">
+  <a href="https://github.com/fajzanetti/primeiro-projeto-nodejs#readme">⬅ Desafio Anterior</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;🚫
+</p>
 
 # 🚀 Sobre o desafio
 
@@ -47,7 +50,7 @@ Essa será uma aplicação que deve armazenar transações financeiras de entrad
     <p align="left">🟢 Requisição POST fazendo a importação do arquivo .csv acima.</p>
     <img alt="Get Repos" title="Get Repos" src=".github/05.PNG" />
     <p align="left">🟣 Requisição GET mostrando todas <i>transactions</i> cadastradas, ja realizando o <i>balance</i> e com a importação do arquivo .csv.<br>🔴 ID em destaque selecionado apenas para exemplificar a rota DELETE.</p>
-    <img alt="Get Repos" title="Get Repos" src=".github/06.PNG" />
+    <img alt="Get Repos" title="Get Repos" src=".github/06.png" />
     <p align="left">🔴 Requisição DELETE.</p>
     <img alt="Get Repos" title="Get Repos" src=".github/07.PNG" />
     <p align="left">🟣 Requisição GET, fazendo a ultima listagem para mostra como ficou depois de todas as requisições.</p>
