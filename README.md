@@ -21,7 +21,8 @@
   <a href="#-Projeto">🚧 Projeto</a>
 </p>
 <p align="center">
-  <a href="https://github.com/fajzanetti/primeiro-projeto-nodejs#readme">⬅ Desafio Anterior</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;🚫
+  <a href="https://github.com/fajzanetti/primeiro-projeto-nodejs#readme">⬅ Desafio Anterior</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/fajzanetti/GoFinances-Web#readme">Próximo Desafio ➡</a>
 </p>
 
 # 🚀 Sobre o desafio
